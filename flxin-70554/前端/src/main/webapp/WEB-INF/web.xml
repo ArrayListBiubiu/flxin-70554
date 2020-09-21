@@ -1,0 +1,26 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+    <!-- DispatcherServlet根本上也是一个servlet。 -->
+    <servlet>
+        <servlet-name>org.springframework.web.servlet.DispatcherServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <!--由于springmvc框架是基于spring的，所以需要加载spring的配置文件，在DispatcherServlet的父类FrameworkServlet类中
+            有属性contextConfigLocation，用于加载上下文配置文件，即spring的配置文件，为它配置初始化参数。 注：只会加载一次（servlet本身是单例的） -->
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:ajax.xml</param-value>
+        </init-param>
+        <!--由于上述代码，spring的配置文件会随着DispatcherServlet类的初始化而加载，在springmvc的工作流程中，更希望启动Tomcat的
+            时候即加载，所以添加<load-on-startup>1</load-on-startup>，表示当Tomcat启动的时候初始化这个servlet，从而加载spring
+            的配置文件。 -->
+        <load-on-startup>1</load-on-startup>
+        <!--***最终得到的效果：启动Tomcat时，自动加载servlet，随即也自动加载spring的配置文件。*** -->
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>org.springframework.web.servlet.DispatcherServlet</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+</web-app>

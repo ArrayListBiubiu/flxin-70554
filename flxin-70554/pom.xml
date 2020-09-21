@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>flxin.com</groupId>
+    <artifactId>flxin-70554</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>算法</module>
+        <module>第二季</module>
+        <module>前端</module>
+        <module>JavaEE基础</module>
+        <module>JavaEE</module>
+        <module>设计模式</module>
+        <module>11</module>
+    </modules>
+
+
+</project>
