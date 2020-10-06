@@ -1,0 +1,10 @@
+##ignore this file##
+
+##忽略".idea"文件夹下的所有文件
+.idea/
+
+##忽略".iml"结尾的文件
+*.iml
+
+##忽略".gitignore"结尾的文件
+*.gitignore
