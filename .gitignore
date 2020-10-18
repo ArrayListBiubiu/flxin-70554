@@ -8,3 +8,6 @@
 
 ##忽略".gitignore"结尾的文件
 *.gitignore
+
+##忽略".gitignore"结尾的文件
+*.class
