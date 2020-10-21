@@ -1,7 +1,9 @@
 package reflect.clas.object.function;
 
 
-import javaee.reflect.get.clas.object.Dog;
+
+
+import reflect.get.clas.object.Dog;
 
 import java.lang.reflect.Method;
 

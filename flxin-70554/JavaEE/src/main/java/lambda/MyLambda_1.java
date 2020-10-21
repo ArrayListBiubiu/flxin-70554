@@ -1,8 +1,7 @@
 package lambda;
 
 
-import javaee.lambda.interfaces.*;
-
+import lambda.interfaces.*;
 
 public class MyLambda_1 {
 

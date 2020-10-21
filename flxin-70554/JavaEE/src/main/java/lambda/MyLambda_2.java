@@ -1,10 +1,10 @@
 package lambda;
 
 
-import javaee.lambda.interfaces.Lambda_1_NoneReturnNoneParameter;
-import javaee.lambda.interfaces.Lambda_2_NoneReturnOneParameter;
-import javaee.lambda.interfaces.Lambda_3_NoneReturnMutipleParameter;
-import javaee.lambda.interfaces.Lambda_5_ReturnOneParameter;
+import lambda.interfaces.Lambda_1_NoneReturnNoneParameter;
+import lambda.interfaces.Lambda_2_NoneReturnOneParameter;
+import lambda.interfaces.Lambda_3_NoneReturnMutipleParameter;
+import lambda.interfaces.Lambda_5_ReturnOneParameter;
 
 /**
  * lambda表达式的精简方式
